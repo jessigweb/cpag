@@ -1,0 +1,12 @@
+{
+  "name": "cpag",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-concat-css": "^0.3.2",
+    "grunt-contrib-cssmin": "^2.2.1"
+  },
+  "dependencies": {
+    "bower": "^1.8.4"
+  }
+}

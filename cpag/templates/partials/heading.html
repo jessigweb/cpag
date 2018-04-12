@@ -1,0 +1,13 @@
+<div class="grid-x content-block text-center">
+	<div class="cell">
+		{% if block.value.size == 'h1' %}
+			<h1>{{ block.value.heading_text }}</h1>
+		{% elif block.value.size == 'h2' %}
+			<h2>{{ block.value.heading_text }}</h2>
+		{% elif block.value.size == 'h3' %}
+			<h3>{{ block.value.heading_text }}</h3>
+		{% elif block.value.size == 'h4' %}
+			<h4>{{ block.value.heading_text }}</h4>
+		{% endif %}
+	</div>
+</div>

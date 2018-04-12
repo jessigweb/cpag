@@ -1,0 +1,193 @@
+h1,h2,h3,h4 {
+    font-family: "Georgia", Times, serif;
+}
+
+.content-block {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.staff-block {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.homepage_parallax_1 { 
+	padding-top: 40em;
+    /* The image used */
+    background-image: url("/static/images/homepage_parallax_1.jpg");
+
+    /* Full height */
+    height: 90em; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepage_parallax_2 { 
+	padding-top: 30em;
+    /* The image used */
+    background-image: url("/static/images/img_parrallax.jpeg");
+
+    /* Full height */
+    height: 80em; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepage_section_2 { 
+	background: white;
+}
+
+.homepage_tile {
+	padding: 3em;
+}
+
+.location {
+	padding-bottom: 3em;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.contact_section {
+	color: #333;
+	background-image: url("/static/images/bible2.jpg");
+	height: 45em; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+.contact-tile {
+	background-color: white;
+	opacity: .8;
+	height: 15em;
+	margin-bottom: 1em;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);
+}
+
+.contact-tile:hover {
+	opacity: .9;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.16), 0 5px 8px rgba(0,0,0,0.22);
+}
+
+.contact_icon {
+	font-size: 4rem;
+}
+
+.cta-button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid #333;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 1.25em;
+    color: black;
+}
+
+.cta-button:hover {
+	background-color: #333;
+	position: relative;
+	top: 2px;
+	opacity: .8;
+	color: white;
+	transition: .3s;
+}
+
+.read-button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid #333;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    color: black;
+}
+
+.staff-image-wrapper img {
+    border-radius: 50%;
+}
+
+.read-button:hover {
+    background-color: #333;
+    position: relative;
+    top: 2px;
+    opacity: .8;
+    color: white;
+    transition: .3s;
+}
+
+.menu-item:hover {
+	padding-right: 10px;
+	transition: all .3s ease-in-out;
+}
+
+.close-button {
+	color: white;
+	font-size: 2.75rem;
+}
+
+.close-button:hover {
+	color: #d3d3d3;
+	transition: all .2s ease-in-out;
+}
+
+.staff-image-wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.staff-content-wrapper {
+    background-color: #E8E8E8;
+    padding: 1em 2em 1em 2em;
+    text-align: right;
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    transition: .3s ease-out;
+}
+
+.staff-content-wrapper:hover {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+}
+
+.staff-container {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.submenu-toggle::after {
+    border-color: white transparent !important;
+}
+
+@media only screen and (max-device-width: 1366px) {
+.homepage_parallax_1 {
+    background-image: url("/static/images/homepage_parallax_1_small.jpg");
+}

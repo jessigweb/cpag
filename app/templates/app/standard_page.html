@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="grid-container">
+	{% for block in page.body %}
+		{% with template_name=block.block_type|add:".html" %}
+			{% include 'partials/'|add:template_name with block=block %}
+		{% endwith %}
+	{% endfor %}
+</div>
+
+{% endblock %}

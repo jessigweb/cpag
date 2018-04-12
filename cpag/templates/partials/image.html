@@ -1,0 +1,22 @@
+{% load wagtailimages_tags %}
+
+{% if block.value.formatting == "original" %}
+<div class="grid-x content-block">
+	<div class="cell">
+		{% image block.value.image original %}
+	</div>
+</div>
+{% elif block.value.formatting == "banner" %}
+<div class="grid-x content-block">
+	<div class="cell">
+		{% image block.value.image width-1200 %}
+	</div>
+</div>
+{% elif block.value.formatting == "custom" %}
+<div class="grid-x content-block">
+	<div class="cell">
+		{% image block.value.image original as img %}
+		<img src="{{ img.url }}" width="{{block.value.width}}" height="{{block.value.height}}"/>
+	</div>
+</div>
+{% endif %}

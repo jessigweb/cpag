@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="homepage_parallax_1">
+	<section style="background-color: white; opacity: .8; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);">
+		<div class="grid-container">
+			<div class="grid-x">
+				<div class="cell text-center" style="color: black; padding-top: 6em; padding-bottom: 6em;">
+					<h1>Welcome to Centerpointe Assembly of God</h1>
+					<a href="/about-us/"><button class="cta-button">Learn More</button></a>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<div class="homepage_section_2">
+	<section>
+		<div class="grid-x">
+			<div class="cell homepage_tile" data-aos="slide-left"
+ data-aos-easing="ease-out-cubic"
+ data-aos-duration="1000">
+					<h4 style="color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur lacinia nisi, eget accumsan metus gravida a. Integer ut augue at justo hendrerit vulputate. Mauris posuere enim id quam accumsan tempus quis vel elit.</h4>
+					<p class="text-right"><em>Pastor Spence Walker</em></p>
+			</div>
+			<div class="cell location" data-aos="slide-right"
+ data-aos-easing="ease-out-cubic"
+ data-aos-duration="1000">
+				<div class="grid-x grid-margin-x align-middle">
+					<div class="cell small-12 medium-5 text-center">
+						<h2 style="color: #333; padding-top: 1em; padding-bottom: 1em;">Where are we located?</h2>
+					</div>
+					<div class="cell small-12 medium-7 text-center">
+						<div class="map-responsive">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56751.956087821076!2d-88.1472000563309!3d30.723254635352607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12770fd799f2d612!2sCenterpointe+Assembly+of+God!5e0!3m2!1sen!2sus!4v1520965786828" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<div class="homepage_parallax_2">
+	<section style="background-color: white; opacity: .8; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);">
+		<div class="grid-container">
+			<div class="grid-x">
+				<div class="cell" style="color: black; padding-top: 6em; padding-bottom: 6em;">
+					<h3 style="color: #333;">"For where two or three gather in my name, there am I with them.</h3>
+					<p class="text-right" style="color: #333;"><em>Matthew 18:20</em></p>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+<div class="grid-x grid-margin-x align-middle contact_section text-center">
+		<div class="cell small-12 medium-4 contact-tile">
+			<i class="fi-clock contact_icon"></i>
+			<h2>Times</h2>
+			<h4>SUNDAYS - 10AM</h4>
+			<h4>WEDNESDAYS - 6:30PM</h4>
+		</div>
+		<div class="cell small-12 medium-4 contact-tile">
+			<i class="fi-map contact_icon"></i>
+			<h2>Location</h2>
+			<h4>1375 W I-65 Service Rd N<br>Mobile, AL 36618</h4>
+		</div>
+		<div class="cell small-12 medium-4 contact-tile">
+			<i class="fi-telephone contact_icon"></i>
+			<h2>Contact</h2>
+			<h4>(251) 479-3138</h4>
+		</div>
+</div>
+{% endblock %}

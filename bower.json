@@ -1,0 +1,19 @@
+{
+  "name": "cpag",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "foundation-sites": "^6.4.3",
+    "aos": "^2.2.0"
+  }
+}
