@@ -5902,6 +5902,21 @@ h1,h2,h3,h4 {
     background-size: cover;
 }
 
+.homepage_parallax_3 { 
+    padding-top: 30em;
+    /* The image used */
+    background-image: url("/static/images/parallax3.jpg");
+
+    /* Full height */
+    height: 80em; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .homepage_tile {
 	padding: 3em;
 }
