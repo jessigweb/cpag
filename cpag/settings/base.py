@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
-ALLOWED_HOSTS = ['cpag.localtunnel.me', 'localhost', '127.0.0.1','206.189.181.107']
+ALLOWED_HOSTS = ['cpag.localtunnel.me', 'localhost', '127.0.0.1','167.99.224.216']
 
 
 # Application definition
