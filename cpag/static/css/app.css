@@ -5814,9 +5814,57 @@ h1,h2,h3,h4 {
     font-family: "Georgia", Times, serif;
 }
 
+:focus {
+    outline: 0 !important;
+}
+
+.attention-grabber {
+    padding: 1.5em 2em 1.5em 2em;
+}
+
+.attention-grabber p {
+    font-size: 1.4rem;
+    color: #030351;
+}
+
 .content-block {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+}
+
+.menu-list-item:focus {
+    outline: 0 !important;
+}
+
+.menu-list-item { 
+    outline: 0; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.transparent-section {
+    background-color: white; 
+    opacity: .8; 
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);
+}
+
+.no-select:hover {
+    padding-left: .5rem;
+    transition: all .3s ease-in-out;
+}
+
+.no-select:focus { 
+    outline: 0 !important;
+}
+
+#hamburger:hover {
+    font-size: 2.6rem !important;
+    transition: .2s;
+    color: #d3d3d3 !important;
 }
 
 .staff-block {
@@ -5852,10 +5900,6 @@ h1,h2,h3,h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.homepage_section_2 { 
-	background: white;
 }
 
 .homepage_tile {
@@ -5956,11 +6000,6 @@ h1,h2,h3,h4 {
     transition: .3s;
 }
 
-.menu-item:hover {
-	padding-right: 10px;
-	transition: all .3s ease-in-out;
-}
-
 .close-button {
 	color: white;
 	font-size: 2.75rem;
@@ -5993,6 +6032,11 @@ h1,h2,h3,h4 {
 .staff-container {
     padding-left: 4em;
     padding-right: 4em;
+}
+
+.submenu-toggle {
+    margin-top: .5em;
+    margin-right: 1.5em;
 }
 
 .submenu-toggle::after {

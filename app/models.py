@@ -1,9 +1,17 @@
 from django.db import models
 
+from modelcluster.fields import ParentalKey
+from wagtail.admin.edit_handlers import (
+    FieldPanel, FieldRowPanel,
+    InlinePanel, MultiFieldPanel, StreamFieldPanel
+)
+
+from wagtail.contrib.forms.models import AbstractEmailForm, AbstractFormField
+from wagtail.contrib.forms.edit_handlers import FormSubmissionsPanel
+
 from wagtail.core.models import Page
 from wagtail.core.fields import StreamField, RichTextField
 from wagtail.core import blocks
-from wagtail.admin.edit_handlers import FieldPanel, StreamFieldPanel
 from wagtail.images.blocks import ImageChooserBlock
 
 from wagtail.images.models import Image
@@ -23,6 +31,21 @@ from wagtail.core.blocks import (
     IntegerBlock, 
     PageChooserBlock
 )
+
+class Verse(models.Model):
+    verse = models.CharField(max_length=200)
+    text = models.TextField()
+    active = models.BooleanField(default=False)
+
+    def __unicode__(self):
+        return self.title
+
+    panels = [
+        FieldPanel('verse'),
+        FieldPanel('text'),
+        FieldPanel('active')
+    ]
+
 
 class Event(models.Model):
     title = models.CharField(max_length=200)
@@ -94,6 +117,28 @@ class ImageBlock(StructBlock):
     class Meta:
         icon = "image"
 
+"""Form Models"""
+class FormField(AbstractFormField):
+    page = ParentalKey('FormPage', on_delete=models.CASCADE, related_name='form_fields')
+
+
+class FormPage(AbstractEmailForm):
+    intro = RichTextField(blank=True)
+    thank_you_text = RichTextField(blank=True)
+
+    content_panels = AbstractEmailForm.content_panels + [
+        FormSubmissionsPanel(),
+        FieldPanel('intro', classname="full"),
+        InlinePanel('form_fields', label="Form fields"),
+        FieldPanel('thank_you_text', classname="full"),
+        MultiFieldPanel([
+            FieldRowPanel([
+                FieldPanel('from_address', classname="col6"),
+                FieldPanel('to_address', classname="col6"),
+            ]),
+            FieldPanel('subject'),
+        ], "Email"),
+    ]
 
 """Page Models"""
 class HomePage(Page):
