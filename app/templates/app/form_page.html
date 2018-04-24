@@ -1,18 +1,25 @@
 {% extends 'base.html' %}
 
-{% load wagtailcore_tags %}
+{% load wagtailcore_tags material_form %}
+
+{% block extra_css %}
+        {% include 'material/includes/material_css.html' %}
+{% endblock %}
 
 {% block content %}
 <div class="grid-x grid-container">
     <div class="cell">
-        <title>{{ page.title }}</title>
-        <h1>{{ page.title }}</h1>
+        <h1 class="form-page-header">{{ page.title }}</h1>
         {{ page.intro|richtext }}
         <form action="{% pageurl page %}" method="POST">
             {% csrf_token %}
-            {{ form.as_p }}
-            <input type="submit">
+            {% form form=form %}{% endform %}
+            <button type="submit" name="_submit" class="btn">Submit</button>
         </form>
     </div>
 </div>
+{% endblock %}
+
+{% block extra_js %}
+        {% include 'material/includes/material_js.html' %}
 {% endblock %}
