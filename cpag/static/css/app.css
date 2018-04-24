@@ -6058,12 +6058,35 @@ h1,h2,h3,h4 {
     border-color: white transparent !important;
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media (max-width: 480px) {
 .homepage_parallax_1 {
     background-image: url("/static/images/homepage_parallax_1_small.jpg");
+    height: auto !important;
+    -moz-background-size: auto;
+    -webkit-background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: auto;
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media (max-width: 480px) {
+.homepage_parallax_2 {
+    background-image: url("/static/images/img_parrallax.jpeg");
+    height: auto !important;
+    -moz-background-size: auto;
+    -webkit-background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: auto;
+}
+
+@media (max-width: 480px) {
 .homepage_parallax_3 {
     background-image: url("/static/images/parallax3_small.jpg");
+    height: auto !important;
+    -moz-background-size: auto;
+    -webkit-background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: auto;
 }
