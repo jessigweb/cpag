@@ -5832,6 +5832,10 @@ h1,h2,h3,h4 {
     margin-bottom: 1.5em;
 }
 
+.eventmodal-content {
+    padding: 2em;
+}
+
 .menu-list-item:focus {
     outline: 0 !important;
 }
