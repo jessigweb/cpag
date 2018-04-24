@@ -1,10 +1,6 @@
 {% extends 'base.html' %}
 
-{% load wagtailcore_tags material_form %}
-
-{% block extra_css %}
-        {% include 'material/includes/material_css.html' %}
-{% endblock %}
+{% load wagtailcore_tags %}
 
 {% block content %}
 <div class="grid-x grid-container">
@@ -18,8 +14,4 @@
         </form>
     </div>
 </div>
-{% endblock %}
-
-{% block extra_js %}
-        {% include 'material/includes/material_js.html' %}
 {% endblock %}
