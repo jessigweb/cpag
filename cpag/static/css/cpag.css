@@ -98,7 +98,6 @@ h5 {
     max-height: 90em; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,7 +113,6 @@ h5 {
     max-height: 90em; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,7 +128,6 @@ h5 {
     max-height: 90em; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -287,21 +284,4 @@ h5 {
     background-image: url("/static/images/parallax3_small.jpg");
 }
 
-@media only screen and (-webkit-overflow-scrolling: touch) {
-    .homepage_parallax_1 {
-        background-attachment: initial;
-    }
-}
-
-@media only screen and (-webkit-overflow-scrolling: touch) {
-    .homepage_parallax_2 {
-        background-attachment: initial;
-    }
-}
-
-@media only screen and (-webkit-overflow-scrolling: touch) {
-    .homepage_parallax_3 {
-        background-attachment: initial;
-    }
-}
 
