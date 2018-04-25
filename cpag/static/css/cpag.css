@@ -286,7 +286,7 @@ h5 {
     }
 }
 
-@media (min-width: 1400) {
+@media (min-width: 1400px) {
     .homepage_parallax_1 {
     background-attachment: fixed;
     }
