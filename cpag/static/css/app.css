@@ -5902,11 +5902,12 @@ h5 {
 
 .homepage_parallax_1 { 
 	padding-top: 40em;
+    padding-bottom: 40em;
     /* The image used */
     background-image: url("/static/images/homepage_parallax_1.jpg");
     max-width: 100%;
     /* Full height */
-    max-height: 80em; 
+    max-height: 90em; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -5917,11 +5918,12 @@ h5 {
 
 .homepage_parallax_2 { 
 	padding-top: 30em;
+    padding-bottom: 30em;
     /* The image used */
     background-image: url("/static/images/img_parrallax.jpeg");
     max-width: 100%;
     /* Full height */
-    max-height: 80em; 
+    max-height: 90em; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -5932,11 +5934,12 @@ h5 {
 
 .homepage_parallax_3 { 
     padding-top: 30em;
+    padding-bottom: 30em;
     /* The image used */
     background-image: url("/static/images/parallax3.jpg");
     max-width: 100%;
     /* Full height */
-    max-height: 80em; 
+    max-height: 90em; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
