@@ -5904,7 +5904,7 @@ h5 {
 	padding-top: 40em;
     padding-bottom: 40em;
     /* The image used */
-    background-image: url("/static/images/homepage_parallax_1.jpg");
+    background-image: url("/static/images/parallax1.jpg");
     max-width: 100%;
     /* Full height */
     max-height: 90em; 
@@ -5919,7 +5919,7 @@ h5 {
 	padding-top: 30em;
     padding-bottom: 30em;
     /* The image used */
-    background-image: url("/static/images/img_parrallax.jpeg");
+    background-image: url("/static/images/parallax2.jpeg");
     max-width: 100%;
     /* Full height */
     max-height: 90em; 
@@ -6086,13 +6086,19 @@ h5 {
     border-color: white transparent !important;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 799px) {
 .homepage_parallax_1 {
-    background-image: url("/static/images/homepage_parallax_1_small.jpg");
+    background-image: url("/static/images/parallax1_small.jpg");
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 799px) {
+.homepage_parallax_1 {
+    background-image: url("/static/images/parallax2_small.jpeg");
+    }
+}
+
+@media (max-width: 799px) {
 .homepage_parallax_3 {
     background-image: url("/static/images/parallax3_small.jpg");
     }
