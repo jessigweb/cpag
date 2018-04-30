@@ -48,7 +48,7 @@ class Verse(models.Model):
 
 MISSION_AREA = (
     ('HOME', 'Home'),
-    ('Foreign', 'Foreign'),
+    ('FOREIGN', 'Foreign'),
 )
 
 class Mission(models.Model):
@@ -185,6 +185,10 @@ class StandardPage(Page):
         ('html', RawHTMLBlock(required=False)),
         ('staff', StaffBlock(required=False)),
         ('image', ImageBlock(required=False)),
+        ('mission', ChoiceBlock(choices=[
+            ('HOME', 'Home'),
+            ('FOREIGN', 'Foreign')
+            ], icon='site', required=False),
     ])
 
 	content_panels = Page.content_panels + [

@@ -1,0 +1,13 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% get_missions block.value as missions %}
+<div class="grid-x grid-container">
+{% for mission in missions %}
+<div class="cell small-12 medium-3 text-center">
+	<div class="staff-image-wrapper">
+	{% image mission.image fill-200x200 %}
+	</div>
+	{{ mission.name }}
+	<a href="{{ mission.link }}">{{ mission.link }}</a>
+</div>
+{% endfor %}
