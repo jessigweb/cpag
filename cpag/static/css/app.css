@@ -6087,8 +6087,8 @@ h5 {
 }
 
 .contact-form {
-    padding-left: 12em;
-    padding-right: 12em;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 @media (max-width: 799px) {
