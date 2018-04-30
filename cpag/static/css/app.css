@@ -6086,6 +6086,11 @@ h5 {
     border-color: white transparent !important;
 }
 
+form {
+    padding-left: 12em;
+    padding-right: 12em;
+}
+
 @media (max-width: 799px) {
 .homepage_parallax_1 {
     background-image: url("/static/images/parallax1_small.jpg");
