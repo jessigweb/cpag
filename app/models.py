@@ -46,9 +46,19 @@ class Verse(models.Model):
         FieldPanel('active')
     ]
 
+MISSION_AREA = (
+    ('HOME', 'Home'),
+    ('Foreign', 'Foreign'),
+)
+
 class Mission(models.Model):
     name = models.CharField(max_length=200)
     link = models.CharField(max_length=200, blank=True)
+    area = models.CharField(
+        max_length=200,
+        choices=MISSION_AREA,
+        default='HOME',
+    )
     image = models.ForeignKey(
         'wagtailimages.Image',
         null=True,
