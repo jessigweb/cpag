@@ -8,11 +8,8 @@
 			<h3>{{ block.value.name }}</h3>
 			<p>{{ block.value.title }}</p>
 			<div>{{ block.value.content|truncatechars:300 }}</div>
-			{% if block.value.content|richtext|length > 300 %}
 			<div><button class="read-button" href="#" data-open="{{ block.id }}">&#43;</button>
-			{% endif %}
 			</div>
-			{% if block.value.content|richtext|length > 300 %}
 			<div class="large reveal" id="{{ block.id }}" data-reveal>
 				<button class="close-button" data-close aria-label="Close modal" type="button" style="color: black;">
 				  <span aria-hidden="true">&times;</span>
@@ -22,7 +19,6 @@
 				{{ block.value.content }}
 				</div>
 			</div>
-			{% endif %}
 		</div>
 	</div>
 </div>
