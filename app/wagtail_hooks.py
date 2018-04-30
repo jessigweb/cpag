@@ -11,7 +11,7 @@ class MissionAdmin(ModelAdmin):
 	model = Mission
 	menu_order = 700
 	menu_icon = "site"
-	list_display = ('name')
+	list_display = ('name', 'link')
 
 class VerseAdmin(ModelAdmin):
 	model = Verse
