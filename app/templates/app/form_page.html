@@ -10,7 +10,7 @@
         <form action="{% pageurl page %}" method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit" name="_submit" class="btn">Submit</button>
+            <input type="submit">
         </form>
     </div>
 </div>
