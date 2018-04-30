@@ -188,7 +188,7 @@ class StandardPage(Page):
         ('mission', ChoiceBlock(choices=[
             ('HOME', 'Home'),
             ('FOREIGN', 'Foreign')
-            ], icon='site', required=False),
+            ], icon='site', required=False))
     ])
 
 	content_panels = Page.content_panels + [
