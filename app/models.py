@@ -46,6 +46,26 @@ class Verse(models.Model):
         FieldPanel('active')
     ]
 
+class Mission(models.Model):
+    name = models.CharField(max_length=200)
+    link = models.CharField(max_length=200, blank=True)
+    image = models.ForeignKey(
+        'wagtailimages.Image',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+'
+        )
+
+    def __unicode__(self):
+        return self.name
+
+    panels = [
+        FieldPanel('name'),
+        FieldPanel('link'),
+        ImageChooserPanel('image')
+    ]
+
 
 class Event(models.Model):
     title = models.CharField(max_length=200)
