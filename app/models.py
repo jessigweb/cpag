@@ -73,6 +73,7 @@ class Mission(models.Model):
     panels = [
         FieldPanel('name'),
         FieldPanel('link'),
+        FieldPanel('area'),
         ImageChooserPanel('image')
     ]
 
