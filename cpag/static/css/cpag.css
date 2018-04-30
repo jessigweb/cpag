@@ -34,6 +34,11 @@ h5 {
     padding: 1.5em 2em 1.5em 2em;
 }
 
+.giving-wrapper {
+    background: #eee;
+    padding: 10%;
+}
+
 .attention-grabber p {
     font-size: 1.4rem;
     color: #030351;
