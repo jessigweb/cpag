@@ -178,6 +178,9 @@ class HomePage(Page):
 class EventPage(Page):
     pass
 
+class GivingPage(Page):
+    pass
+
 class StandardPage(Page):
 	body = StreamField([
         ('heading', HeadingBlock(required=False)),
