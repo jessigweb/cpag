@@ -291,6 +291,30 @@ label {
     padding-right: 20%;
 }
 
+.event-page-title {
+    margin-top: .5em;
+}
+
+.event-panel {
+    background-color: #E8E8E8;
+    margin: 2.5em;
+    padding: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.event-panel:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.event-content {
+    padding: .5em;
+}
+
+.eventmodaltoggle {
+    text-align: right;
+}
+
 @media (max-width: 799px) {
 .homepage_parallax_1 {
     background-image: url("/static/images/parallax1_small.jpg");
