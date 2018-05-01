@@ -26,6 +26,12 @@ h5 {
     font-size: 2.7vh !important;
 }
 
+label {
+    color: #333 !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+}
+
 :focus {
     outline: 0 !important;
 }
@@ -280,8 +286,8 @@ h5 {
 }
 
 .contact-form {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 @media (max-width: 799px) {
