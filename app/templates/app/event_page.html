@@ -8,7 +8,6 @@
 	<h1 class="text-center event-page-title">{{ page.seo_title }}</h1>
 	{% get_events as events %}
 	{% for event in events %}
-	<button href="#" data-open="eventmodal-{{ event.id }}">
 	<div class="grid-x event-panel">
 		<div class="medium-12 text-center">
 			<h2>{{ event.title }} - {{ event.datetime|date:"d M Y" }} - {{ event.datetime|date:"P" }}</h2>
@@ -19,27 +18,7 @@
 		<hr class="show-for-small-only">
 		</div>
 		<div class="small-12 medium-8 text-left event-content">
-			{{ event.summary|richtext|truncatewords:40 }}
-		</div>
-	</div>
-	</button>
-
-	<div class="large reveal" id="eventmodal-{{ event.id }}" data-reveal>
-		<button class="close-button" data-close aria-label="Close modal" type="button" style="color: black;">
-		  <span aria-hidden="true">&times;</span>
-		</button>
-		<div class="grid-x">
-			<div class="small-12 large-3 text-center">
-				<h3>{{ event.title }}</h3>
-				<h4>{{ event.datetime|date:"d M Y" }} - {{ event.datetime|date:"P" }}</h4>
-				<hr class="show-for-small-only">
-				{% image event.image width-300 %}
-				<hr class="show-for-small-only">
-			</div>
-
-			<div class="small-12 large-9 eventmodal-content">
-				{{ event.summary|richtext }}
-			</div>
+			{{ event.summary|richtext }}
 		</div>
 	</div>
 	{% endfor %}
