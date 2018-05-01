@@ -277,12 +277,13 @@ label {
 }
 
 .submenu-toggle {
-    margin-top: .5em;
-    margin-right: 1.5em;
+    margin-top: .8em;
+    margin-right: 1.8em;
 }
 
 .submenu-toggle::after {
     border-color: white transparent !important;
+    border: inset 8px !important;
 }
 
 .contact-form {
