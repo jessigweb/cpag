@@ -283,7 +283,6 @@ label {
 
 .submenu-toggle::after {
     border-color: white transparent !important;
-    border: inset 8px !important;
 }
 
 .contact-form {
