@@ -26,6 +26,11 @@ h5 {
     font-size: 2.7vh !important;
 }
 
+footer {
+    color: #eee;
+    background-color: black;
+}
+
 label {
     color: #333 !important;
     font-weight: bold !important;

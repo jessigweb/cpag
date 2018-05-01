@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <div class="grid-container">
 	{% for block in page.body %}
 		{% with template_name=block.block_type|add:".html" %}
@@ -9,5 +8,8 @@
 		{% endwith %}
 	{% endfor %}
 </div>
+{% endblock %}
 
+{% block footer %}
+{% include 'includes/footer.html' %}
 {% endblock %}
