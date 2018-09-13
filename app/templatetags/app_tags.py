@@ -11,14 +11,12 @@ def get_events():
 
 @register.simple_tag()
 def get_verse():
-	verses = Verse.objects.filter(active=True)
-	verses = verses[0]
-	return 
+	verses = Verse.objects.filter(active=True)[0]
+	return verses
 
 @register.simple_tag()
 def get_featured_events():
-	events = Event.objects.filter(featured=True).order_by('datetime')
-	events = events[0]
+	events = Event.objects.filter(featured=True).order_by('datetime')[0]
 	return events
 
 @register.simple_tag()
