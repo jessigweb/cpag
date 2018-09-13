@@ -5,7 +5,8 @@ class EventAdmin(ModelAdmin):
 	model = Event
 	menu_order = 500
 	menu_icon = "date"
-	list_display = ('title', 'datetime')
+	list_display = ('title', 'datetime', 'featured')
+	list_editable = ('featured',)
 
 class MissionAdmin(ModelAdmin):
 	model = Mission
