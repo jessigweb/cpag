@@ -15,7 +15,7 @@ def get_verse():
 
 @register.simple_tag()
 def get_featured_events():
-	return Event.objects.filter(featured=True).order_by('datetime')
+	return Event.objects.filter(featured=True).order_by('datetime')[:1]
 
 @register.simple_tag()
 def get_missions(category):
