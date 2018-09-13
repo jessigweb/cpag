@@ -11,11 +11,11 @@ def get_events():
 
 @register.simple_tag()
 def get_verse():
-	return Verse.objects.filter(active=True)[:1]
+	return Verse.objects.filter(active=True)[0]
 
 @register.simple_tag()
 def get_featured_events():
-	return Event.objects.filter(featured=True).order_by('datetime')[:1]
+	return Event.objects.filter(featured=True).order_by('datetime')[0]
 
 @register.simple_tag()
 def get_missions(category):
