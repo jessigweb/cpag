@@ -4,7 +4,7 @@
 {% for item in menu_items %}
 	<li class="menu-list-item">
 		<a class="no-select menu-item" href="{{ item.href }}" style="color: white;">
-			<h3><strong>{{ item }}</strong></h3>
+			<h3>{{ item }}</h3>
 		</a>
 		{% if item.has_children_in_menu %}
 		<ul class="menu vertical nested text-center">
