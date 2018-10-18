@@ -291,6 +291,10 @@ label {
     border-color: white transparent !important;
 }
 
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+    border-color: white transparent transparent !important;
+}
+
 .contact-form {
     padding-left: 20%;
     padding-right: 20%;
