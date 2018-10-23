@@ -7,7 +7,7 @@ register = template.Library()
 
 @register.simple_tag()
 def get_events():
-	return Event.objects.filter(datetime__gt = datetime.now()).order_by('datetime')
+	return Event.objects.filter(active=True).order_by('datetime')
 
 @register.simple_tag()
 def get_verse():
