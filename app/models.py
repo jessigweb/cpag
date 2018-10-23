@@ -103,7 +103,8 @@ class Event(models.Model):
         ImageChooserPanel('image'),
         FieldPanel('datetime'),
         FieldPanel('summary'),
-        FieldPanel('featured')
+        FieldPanel('featured'),
+        FieldPanel('active')
     ]
 
 """StreamField Blocks"""
