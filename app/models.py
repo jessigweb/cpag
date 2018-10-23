@@ -99,12 +99,12 @@ class Event(models.Model):
         ordering = ['datetime']
 
     panels = [
+        FieldPanel('active'),
         FieldPanel('title'),
         ImageChooserPanel('image'),
         FieldPanel('datetime'),
         FieldPanel('summary'),
-        FieldPanel('featured'),
-        FieldPanel('active')
+        FieldPanel('featured')
     ]
 
 """StreamField Blocks"""
