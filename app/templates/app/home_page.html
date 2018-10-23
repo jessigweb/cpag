@@ -56,7 +56,7 @@
 				</div>
 				<div class="cell small-12 medium-8">
 					<h3>{{ event.title }} - {{ event.datetime|date:"d M Y" }} - {{ event.datetime|date:"P" }}</h3>
-					{{ event.summary|richtext|truncatewords:75 }}
+					{{ event.summary|richtext|truncatewords:200 }}
 				</div>
 			</div>
 		</div>
