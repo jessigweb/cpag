@@ -1,0 +1,333 @@
+h1,h2,h3,h4 {
+    font-family: "Georgia", Times, serif !important;
+}
+
+footer {
+    color: #eee;
+    background-color: black;
+}
+
+label {
+    color: #333 !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+.attention-grabber {
+    padding: 1.5em 2em 1.5em 2em;
+}
+
+.giving-wrapper {
+    background: #eee;
+    padding: 10%;
+}
+
+.attention-grabber p {
+    font-size: 1.4rem;
+    color: #030351;
+}
+
+.content-block {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.eventmodal-content {
+    padding: 2em;
+}
+
+.menu-list-item:focus {
+    outline: 0 !important;
+}
+
+.menu-list-item { 
+    outline: 0; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.transparent-section {
+    background-color: white; 
+    opacity: .8; 
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);
+    padding: 3%;
+}
+
+.no-select:hover {
+    padding-left: .5rem;
+    transition: all .3s ease-in-out;
+}
+
+.no-select:focus { 
+    outline: 0 !important;
+}
+
+#hamburger:hover {
+    font-size: 2.6rem !important;
+    transition: .2s;
+    color: #d3d3d3 !important;
+}
+
+.staff-block {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.homepage_parallax_1 { 
+	padding-top: 40em;
+    padding-bottom: 40em;
+    /* The image used */
+    background-image: url("/static/images/parallax1.jpg");
+    max-width: 100%;
+    /* Full height */
+    max-height: 90em; 
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepage_parallax_2 { 
+	padding-top: 30em;
+    padding-bottom: 30em;
+    /* The image used */
+    background-image: url("/static/images/parallax2.jpeg");
+    max-width: 100%;
+    /* Full height */
+    max-height: 90em; 
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepage_parallax_3 { 
+    padding-top: 30em;
+    padding-bottom: 30em;
+    /* The image used */
+    background-image: url("/static/images/parallax3.jpg");
+    max-width: 100%;
+    /* Full height */
+    max-height: 90em; 
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepage_tile {
+	padding: 3em;
+}
+
+.location {
+	padding-bottom: 3em;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.contact_section {
+	color: #333;
+	background-image: url("/static/images/bible2.jpg");
+	height: 45em; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+.contact-tile {
+	background-color: white;
+	opacity: .8;
+	height: 15em;
+	margin-bottom: 1em;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);
+}
+
+.contact-tile:hover {
+	opacity: .9;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.16), 0 5px 8px rgba(0,0,0,0.22);
+}
+
+.contact_icon {
+	font-size: 4rem;
+}
+
+.cta-button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid #333;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 1.25em;
+    color: black;
+}
+
+.cta-button:hover {
+	background-color: #333;
+	position: relative;
+	top: 2px;
+	opacity: .8;
+	color: white;
+	transition: .3s;
+}
+
+.read-button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid #333;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    color: black;
+}
+
+.staff-image-wrapper img {
+    border-radius: 50%;
+}
+
+.read-button:hover {
+    background-color: #333;
+    position: relative;
+    top: 2px;
+    opacity: .8;
+    color: white;
+    transition: .3s;
+}
+
+.close-button {
+	color: white;
+	font-size: 2.75rem;
+}
+
+.close-button:hover {
+	color: #d3d3d3;
+	transition: all .2s ease-in-out;
+}
+
+.staff-image-wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.staff-content-wrapper {
+    background-color: #E8E8E8;
+    padding: 1em 2em 1em 2em;
+    text-align: right;
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    transition: .3s ease-out;
+}
+
+.staff-content-wrapper:hover {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+}
+
+.staff-container {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.submenu-toggle {
+    margin-top: .8em;
+    margin-right: 1.8em;
+}
+
+.submenu-toggle::after {
+    border-color: white transparent !important;
+}
+
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+    border-color: white transparent transparent !important;
+}
+
+.contact-form {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.event-page-title {
+    margin-top: .5em;
+}
+
+.event-panel {
+    background-color: #E8E8E8;
+    margin: 2.5em;
+    padding: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.event-panel:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.event-content {
+    padding: .5em;
+}
+
+.eventmodaltoggle {
+    text-align: right;
+}
+
+@media (max-width: 799px) {
+.homepage_parallax_1 {
+    background-image: url("/static/images/parallax1_small.jpg");
+    }
+}
+
+@media (max-width: 799px) {
+.homepage_parallax_2 {
+    background-image: url("/static/images/parallax2_small.jpeg");
+    }
+}
+
+@media (max-width: 799px) {
+.homepage_parallax_3 {
+    background-image: url("/static/images/parallax3_small.jpg");
+    }
+}
+
+@media (min-width: 1400px) {
+    .homepage_parallax_1 {
+    background-attachment: fixed;
+    }
+    .homepage_parallax_2 {
+    background-attachment: fixed;
+    }
+    .homepage_parallax_3 {
+    background-attachment: fixed;
+    }
+}
+
+
